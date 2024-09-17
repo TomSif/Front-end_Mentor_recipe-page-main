@@ -1,0 +1,319 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 200 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Stone100);
+
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  background-color: var(--White);
+  max-width: 740px;
+  height: auto;
+  font-family: "Outfit", sans-serif;
+  font-size: 1 rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.imgHeader {
+  max-width: 656px;
+  margin: 0 auto;
+}
+
+.imgHeader img {
+  width: 100%;
+  height: auto;
+}
+.h1Header {
+  padding: 2rem;
+}
+.h1Header h1 {
+  font-family: "Young Serif", "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.h1Header-paragraph {
+  padding-top: 1rem;
+  color: var(--Stone600);
+}
+
+.preparationHeader {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: var(--Rose50);
+  border-radius: 1rem;
+}
+.preparationHeader h3 {
+  color: var(--Rose800);
+  margin-left: 0.8rem;
+}
+.preparationHeader ul {
+  padding: 1rem 1rem 0rem 2.2rem;
+  list-style-position: outside;
+  list-style: none;
+}
+.preparationHeader ul li {
+  color: var(--Stone600);
+  padding-left: 1rem;
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+ul li span {
+  line-height: 1.5;
+  margin-left: 0;
+}
+ul li strong {
+  margin-left: -0.8rem;
+}
+/* A changer en priorité lors du breakpoint en réso supérieure*/
+
+.preparationHeader ul li:first-child::before {
+  color: var(--Rose800);
+  content: "\2022" !important;
+  position: relative !important;
+  left: -2rem !important;
+  top: 0.75rem !important;
+  font-size: 1.2rem !important;
+}
+.preparationHeader ul li::before {
+  color: var(--Rose800);
+  font-size: 1.2rem;
+  content: "\2022" !important;
+  left: -2rem !important;
+  position: relative !important;
+}
+
+.ingredientsHeader {
+  margin: 2rem;
+  border-bottom: 1px solid var(--Stone150);
+  padding-bottom: 2rem;
+}
+.ingredientsHeader h2 {
+  font-family: "Young Serif";
+  color: var(--Rose800);
+  font-weight: 400;
+  font-size: 2rem;
+}
+.ingredientsHeader ul {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  align-items: start;
+  gap: 0.5rem;
+  list-style: none;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+.ingredientsHeader li {
+  display: contents;
+}
+.bullet::before {
+  content: "\2022";
+  font-size: 1.2rem;
+  color: var(--Rose800);
+  display: inline-block;
+  position: relative;
+}
+.bulletL::before {
+  content: "\2022"; /* Symbole de la puce */
+  font-size: 1.2rem;
+  color: var(--Rose800);
+  display: inline-block;
+  position: relative;
+  padding-top: 0.75rem;
+}
+.ingredientsHeader li span {
+  line-height: 1.5rem;
+}
+
+.ingredientsText {
+  padding-left: 1rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: var(--Stone600);
+  line-height: 1.5rem;
+}
+main {
+  margin: 0.5rem 2rem 2rem 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--Stone100);
+}
+main h2 {
+  font-family: "Young Serif";
+  color: var(--Rose800);
+  font-weight: 400;
+  font-size: 2rem;
+}
+main ol {
+  padding-left: 1.3rem;
+  padding-top: 1rem;
+}
+main ol li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+main ol li::marker {
+  color: var(--Rose800);
+  font-weight: bold;
+  font-size: 1rem;
+}
+main ol li strong {
+  color: var(--Stone600);
+  margin-right: -0.2rem;
+}
+main ol li span {
+  color: var(--Stone600);
+  /* padding-left: -1rem; */
+}
+
+.nutrition {
+  margin: 0rem 2rem 2rem 2rem;
+}
+.nutrition h2 {
+  font-family: "Young Serif";
+  color: var(--Rose800);
+  font-weight: 400;
+  font-size: 2rem;
+}
+.nutrition p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--Stone600);
+}
+table {
+  width: 100%;
+}
+table tr td {
+  border-bottom: 1px solid var(--Stone100);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+table tbody td:first-child {
+  padding-left: 2rem !important;
+  color: var(--Stone600);
+}
+table tbody td:last-child {
+  color: var(--Rose800);
+  font-weight: bolder;
+}
+.noBorder td {
+  border-bottom: none;
+}
+/* Break point pour puce dans preparation time */
+
+@media (min-width: 389px) {
+  .preparationHeader ul li:first-child::before {
+    color: var(--Rose800);
+    content: "\2022" !important;
+    position: relative !important;
+    left: -2rem !important;
+    font-size: 1.2rem !important;
+    top: 0px !important;
+  }
+}
+
+/* Break point pour puce dans Ingredients */
+@media (min-width: 559px) {
+  .bulletL::before {
+    content: "\2022"; /* Symbole de la puce */
+    font-size: 1.2rem;
+    color: var(--Rose800);
+    display: inline-block;
+    position: relative;
+    padding-top: 0rem;
+  }
+}
+@media (min-width: 700px) {
+  .imgHeader {
+    padding-top: 1rem;
+  }
+  .imgHeader img {
+    border-radius: 1rem;
+  }
+}
+@media (min-width: 737px) {
+  .imgHeader {
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 750px) {
+  .tile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+}
+/* Ordinateur */
+@media (min-width: 829px) {
+  .tile {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 905px) {
+  .tile {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 955px) {
+  .tile {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1015px) {
+  .tile {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* Grand écran */
+@media (min-width: 1441px) {
+  .tile {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
