@@ -68,8 +68,9 @@ body {
 }
 .h1Header h1 {
   font-family: "Young Serif", "Times New Roman", Times, serif;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 400;
+  color: var(--Stone900);
 }
 
 .h1Header-paragraph {
@@ -83,7 +84,7 @@ body {
   background-color: var(--Rose50);
   border-radius: 1rem;
 }
-.preparationHeader h3 {
+.preparationHeader h2 {
   color: var(--Rose800);
   margin-left: 0.8rem;
 }
@@ -108,7 +109,7 @@ ul li strong {
 /* A changer en priorité lors du breakpoint en réso supérieure*/
 
 .preparationHeader ul li:first-child::before {
-  color: var(--Rose800);
+  color: var(--Brown800);
   content: "\2022" !important;
   position: relative !important;
   left: -2rem !important;
@@ -116,7 +117,7 @@ ul li strong {
   font-size: 1.2rem !important;
 }
 .preparationHeader ul li::before {
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-size: 1.2rem;
   content: "\2022" !important;
   left: -2rem !important;
@@ -130,7 +131,7 @@ ul li strong {
 }
 .ingredientsHeader h2 {
   font-family: "Young Serif";
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-weight: 400;
   font-size: 2rem;
 }
@@ -150,14 +151,14 @@ ul li strong {
 .bullet::before {
   content: "\2022";
   font-size: 1.2rem;
-  color: var(--Rose800);
+  color: var(--Brown800);
   display: inline-block;
   position: relative;
 }
 .bulletL::before {
   content: "\2022"; /* Symbole de la puce */
   font-size: 1.2rem;
-  color: var(--Rose800);
+  color: var(--Brown800);
   display: inline-block;
   position: relative;
   padding-top: 0.75rem;
@@ -180,7 +181,7 @@ main {
 }
 main h2 {
   font-family: "Young Serif";
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-weight: 400;
   font-size: 2rem;
 }
@@ -193,7 +194,7 @@ main ol li {
   margin-bottom: 0.4rem;
 }
 main ol li::marker {
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -205,13 +206,15 @@ main ol li span {
   color: var(--Stone600);
   /* padding-left: -1rem; */
 }
-
+footer {
+  width: 100%;
+}
 .nutrition {
-  margin: 0rem 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 .nutrition h2 {
   font-family: "Young Serif";
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-weight: 400;
   font-size: 2rem;
 }
@@ -233,7 +236,7 @@ table tbody td:first-child {
   color: var(--Stone600);
 }
 table tbody td:last-child {
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-weight: bolder;
 }
 .noBorder td {
@@ -243,7 +246,7 @@ table tbody td:last-child {
 
 @media (min-width: 389px) {
   .preparationHeader ul li:first-child::before {
-    color: var(--Rose800);
+    color: var(--Brown800);
     content: "\2022" !important;
     position: relative !important;
     left: -2rem !important;
@@ -257,7 +260,7 @@ table tbody td:last-child {
   .bulletL::before {
     content: "\2022"; /* Symbole de la puce */
     font-size: 1.2rem;
-    color: var(--Rose800);
+    color: var(--Brown800);
     display: inline-block;
     position: relative;
     padding-top: 0rem;
@@ -313,7 +316,7 @@ table tbody td:last-child {
 /* Grand écran */
 @media (min-width: 1441px) {
   .tile {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8em;
   }
 }
